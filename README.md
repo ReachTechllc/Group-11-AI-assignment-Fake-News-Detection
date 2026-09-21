@@ -83,7 +83,7 @@ Before you start, make sure you have:
    - Simple to install and use
    - Free and open source
 
-2. **Python 3.7+** - Download from https://www.python.org/
+2. **Python 3+** - Download from https://www.python.org/
    - When installing: CHECK "Add Python to PATH"
    - Download from: https://www.python.org/downloads/
    - Verify: Open command prompt, type `python --version`
