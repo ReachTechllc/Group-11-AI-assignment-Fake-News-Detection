@@ -20,16 +20,15 @@ This chatbot analyzes any news article title or text and tells you if it's likel
 
 ```
 fake-news-chatbot/
+    ├── datasets/
+        ├── dataset.py                (Auto-downloads training data)
+        ├── Fake.csv                  (Dataset - downloaded by dataset.py)
+        ├── True.csv                  (Dataset - downloaded by dataset.py)
+        ├── model.pkl                 (Trained ML model - created by app.py)
+        ├── vectorizer.pkl            (TF-IDF vectorizer - created by app.py)
 ├── chatbot.html              (Web interface - what you see)
 ├── app.py                    (Python backend - makes predictions)
 ├── requirements.txt          (Python packages needed)
-├── dataset.py                (Auto-downloads training data)
-├── Fake.csv                  (Dataset - downloaded by dataset.py)
-├── True.csv                  (Dataset - downloaded by dataset.py)
-├── model.pkl                 (Trained ML model - created by app.py)
-├── vectorizer.pkl            (TF-IDF vectorizer - created by app.py)
-├── KAGGLE_SETUP.md           (How to setup Kaggle credentials)
-├── LOCALHOST_QUICKSTART_WITH_DOWNLOAD.txt  (Quick setup guide)
 └── README.md                 (This file)
 ```
 
