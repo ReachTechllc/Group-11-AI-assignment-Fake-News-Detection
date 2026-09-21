@@ -25,15 +25,15 @@ def train_and_save_model():
     print("Training model... (this may take a minute)")
     
     # Check if data files exist
-    if not os.path.exists("Fake.csv") or not os.path.exists("True.csv"):
+    if not os.path.exists("datasets/Fake.csv") or not os.path.exists("datasets/True.csv"):
         print("Error: Fake.csv and True.csv not found!")
-        print("Download from: https://www.kaggle.com/datasets/jainpooja/fake-news-detection")
+        print("Run datasets/dataset.py")
         return False
     
     try:
         # Load data
-        fake = pd.read_csv("Fake.csv")
-        real = pd.read_csv("True.csv")
+        fake = pd.read_csv("datasets/Fake.csv")
+        real = pd.read_csv("datasets/True.csv")
         
         fake["label"] = 1  # fake
         real["label"] = 0  # real
